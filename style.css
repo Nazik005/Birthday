@@ -1,0 +1,38 @@
+body {
+    background: #ffdee9; /* Soft pink background */
+    background: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    max-width: 400px;
+    backdrop-filter: blur(10px); /* Glass effect */
+}
+
+h1 { color: #ff4d6d; }
+
+button {
+    background-color: #ff4d6d;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ff758c;
+    transform: scale(1.05);
+}
