@@ -1,0 +1,29 @@
+function createBow() {
+    const bow = document.createElement('div');
+    bow.innerHTML = '🎀'; // You can change this emoji if you want
+    bow.classList.add('floating-bow');
+    
+    // Randomize horizontal position
+    bow.style.left = Math.random() * 100 + "vw";
+    
+    // Randomize size slightly
+    bow.style.fontSize = (Math.random() * 20 + 20) + "px";
+    
+    // Randomize duration of the float
+    bow.style.animationDuration = (Math.random() * 3 + 3) + "s";
+    
+    document.body.appendChild(bow);
+
+    // Remove the bow after it floats away so the page doesn't get slow
+    setTimeout(() => {
+        bow.remove();
+    }, 6000);
+}
+
+// Start creating bows every 300ms
+setInterval(createBow, 300);
+
+function showMessage() {
+    const message = document.getElementById("extra-message");
+    message.style.display = "block";
+}
