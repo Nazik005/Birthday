@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="heart">❤️</div>
+            <h1>Hey Sissy</h1>
+            <p>I made something special for you...</p>
+            <button onclick="showMessage()">Let's Begin</button>
+            
+            <div id="extra-message" style="display:none;">
+                <hr>
+                <h2>Happy Birthday, Sis! 🎂</h2>
+                <p>Every moment with you is a cherished memory.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
